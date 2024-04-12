@@ -1,5 +1,3 @@
-# flutter_book_report_app
+# my_small_book_room
 
-Flutter Book Report App
-
-### 플러터로 만드는 도서 리포트 앱
+나의 작은 책방
