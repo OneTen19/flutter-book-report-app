@@ -1,3 +1,5 @@
+// 처음 앱 실행 시 보이는 인트로 페이지
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_book_report_app/pages/home_page.dart';
