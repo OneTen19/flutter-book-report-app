@@ -77,12 +77,21 @@ class _HomePageState extends State<HomePage> {
               children: [
                 // profile image
                 // DrawerHeader를 이용해 프로필 이미지를 구현
+                // DrawerHeader는 자동적으로 bottom border를 생성해서 이를 없애기 위해 Theme 위젯으로 감싸서 커스터마이징 해줌
+                // 이 방법 외에는 main 파일에서 프로젝트 전체 Theme 데이터를 설정해 줄 수 있지만,
+                // 개인적으로 페이지 내부의 변수를 해당 파일 내에서 해결하는 걸 선호하기에 이 방법을 사용
                 Padding(
                   padding: const EdgeInsets.all(25.0),
-                  child: DrawerHeader(
-                    margin: EdgeInsets.all(8),
-                    child: Image.asset(
-                      'assets/images/profile_image.jpg',
+                  child: Theme(
+                    data: Theme.of(context).copyWith(
+                      dividerTheme:
+                          const DividerThemeData(color: Colors.transparent),
+                    ),
+                    child: DrawerHeader(
+                      margin: EdgeInsets.all(8),
+                      child: Image.asset(
+                        'assets/images/profile_image.jpg',
+                      ),
                     ),
                   ),
                 ),
