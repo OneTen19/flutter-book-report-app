@@ -2,7 +2,8 @@
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_book_report_app/pages/home_page.dart';
+
+import '../home_page.dart';
 
 class IntroPage extends StatelessWidget {
   const IntroPage({super.key});
@@ -64,8 +65,8 @@ class IntroPage extends StatelessWidget {
                     child: Text(
                       '들어가기',
                       style: TextStyle(
-                        fontSize: 20,
-                        color: Colors.white,
+                          fontSize: 20,
+                          color: Colors.white,
                         fontFamily: "UhBee",
                         fontStyle: FontStyle.italic
                       ),

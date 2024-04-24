@@ -10,28 +10,47 @@ class ReportTile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Card(
-      child: Container(
-        width: 200,
-        decoration: BoxDecoration(
-          color: Colors.grey.shade100,
-          borderRadius: BorderRadius.circular(12),
-        ),
-        child: Column(
-          children: [
-            // book image
-            ClipRRect(
-                borderRadius: BorderRadius.vertical(
-                  top: Radius.circular(12),
+      child: AspectRatio(
+        aspectRatio: 2 / 3,
+        child: Container(
+          decoration: BoxDecoration(
+            color: Colors.brown,
+            borderRadius: BorderRadius.circular(12),
+          ),
+          child: SingleChildScrollView(
+            child: Column(
+              children: [
+                // book image
+                Padding(
+                  padding: const EdgeInsets.all(10),
+                  child: ClipRRect(
+                    borderRadius: BorderRadius.all(
+                      Radius.circular(12),
+                    ),
+                    child: Image.asset(
+                      report.imagePath,
+                    ),
+                  ),
                 ),
-                child: Image.asset(
-                  report.imagePath,
-                  fit: BoxFit.fill,
-                )),
 
-            // description
 
-            // price + detail
-          ],
+                // title
+                Text(
+                  report.title,
+                  style: TextStyle(
+                    fontSize: 20,
+                    color: Colors.white,
+                  ),
+                ),
+            
+                // description
+                Text(report.description),
+            
+                // price
+                Text(report.price),
+              ],
+            ),
+          ),
         ),
       ),
     );

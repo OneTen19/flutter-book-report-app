@@ -6,6 +6,3 @@ import 'package:flutter/material.dart';
 // 앱의 기본 배경색
 //const defaultAppBackgroundColor = Color(0xffece6d2);
 const defaultAppBackgroundColor = Color(0xFFeac894);
-
-// 하단 네비게이션 바 색
-const bottomNavBarColor = Color(0xFF6daad0);

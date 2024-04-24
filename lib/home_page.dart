@@ -4,11 +4,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_book_report_app/pages/library_page.dart';
 import 'package:flutter_book_report_app/pages/profile_page.dart';
-import 'package:flutter_book_report_app/pages/report_page.dart';
+import 'package:flutter_book_report_app/pages/main_page.dart';
 import 'package:flutter_book_report_app/pages/search_page.dart';
 import 'package:flutter_book_report_app/theme/colors.dart';
 
-import '../components/bottom_nav_bar.dart';
+import 'components/bottom_nav_bar.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -31,7 +31,7 @@ class _HomePageState extends State<HomePage> {
   // page to display
   final List<Widget> _pages = [
     // Home page
-    const ReportPage(),
+    const MainPage(),
 
     // Search page
     const SearchPage(),
