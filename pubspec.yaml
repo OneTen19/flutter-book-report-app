@@ -101,5 +101,9 @@ flutter:
       fonts:
         - asset: assets/fonts/UhBee Se_hyun.ttf
 
+    - family: Ongle
+      fonts:
+        - asset: assets/fonts/Ongle.ttf
+
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages

@@ -2,13 +2,13 @@
 // 다른 페이지들로 이동할 수 있는 버튼이 있는 페이지
 
 import 'package:flutter/material.dart';
-import 'package:flutter_book_report_app/pages/book_page.dart';
+import 'package:flutter_book_report_app/pages/library_page.dart';
 import 'package:flutter_book_report_app/pages/profile_page.dart';
-import 'package:flutter_book_report_app/pages/report_page.dart';
+import 'package:flutter_book_report_app/pages/main_page.dart';
 import 'package:flutter_book_report_app/pages/search_page.dart';
 import 'package:flutter_book_report_app/theme/colors.dart';
 
-import '../components/bottom_nav_bar.dart';
+import 'components/bottom_nav_bar.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -31,13 +31,13 @@ class _HomePageState extends State<HomePage> {
   // page to display
   final List<Widget> _pages = [
     // Home page
-    const ReportPage(),
+    const MainPage(),
 
     // Search page
     const SearchPage(),
 
-    // Book page
-    const BookPage(),
+    // Library page
+    const LibraryPage(),
 
     // Profile page
     const ProfilePage(),
@@ -142,6 +142,7 @@ class _HomePageState extends State<HomePage> {
           ],
         ),
       ),
+
       body: _pages[_selectedIndex],
     );
   }

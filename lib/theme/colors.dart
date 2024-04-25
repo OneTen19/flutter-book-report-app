@@ -3,4 +3,6 @@
 
 import 'package:flutter/material.dart';
 
-const defaultAppBackgroundColor = Color(0xffece6d2);
+// 앱의 기본 배경색
+//const defaultAppBackgroundColor = Color(0xFFeac894);
+const defaultAppBackgroundColor = Color(0xffF8CEB4);
