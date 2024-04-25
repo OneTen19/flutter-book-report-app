@@ -14,7 +14,7 @@ class ReportTile extends StatelessWidget {
         aspectRatio: 2 / 3,
         child: Container(
           decoration: BoxDecoration(
-            color: Colors.brown,
+            color: Color(0xffe3c499),
             borderRadius: BorderRadius.circular(12),
           ),
           child: SingleChildScrollView(
@@ -42,6 +42,9 @@ class ReportTile extends StatelessWidget {
                     color: Colors.white,
                   ),
                 ),
+
+                // author
+                Text(report.author),
             
                 // description
                 Text(report.description),

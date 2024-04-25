@@ -73,10 +73,12 @@ class MainPage extends StatelessWidget {
                 itemBuilder: (context, index) {
                   // create a report
                   Report report = Report(
-                      title: '천 원을 경영하라',
-                      price: '10,000',
-                      imagePath: 'assets/images/book01.jpg',
-                      description: '천 원을 경영하라 대충 설명');
+                    title: '천 원을 경영하라',
+                    author: '다이소',
+                    price: '10,000',
+                    imagePath: 'assets/images/book01.jpg',
+                    description: '천 원을 경영하라 대충 설명',
+                  );
                   return ReportTile(
                     report: report,
                   );
